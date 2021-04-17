@@ -290,7 +290,7 @@
 			const form = $(this);
 			$.ajax({
 				type: 'POST',
-				url: './form.php',
+				url: './js/form.php',
 				data: form,
 				beforeSend: function() {
 					$('.indicator-time').html('<span class="spinner-grow spinner-grow-md text-prmy"></span>'); // 
