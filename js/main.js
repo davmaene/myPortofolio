@@ -291,12 +291,12 @@
 			$.ajax({
 				type: 'POST',
 				url: './js/form.php',
-				data: form,
+				data: form.serialize(),
 				beforeSend: function() {
 					$('.indicator-time').html('<span class="spinner-grow spinner-grow-md text-prmy"></span>'); // 
 				},
-				success: function(response) {
-					alert(1)
+				success: function(res) {
+					console.log(res)
 				}
 			});
 		})
