@@ -19,10 +19,11 @@ function sendMail($im){
     $headers .= "X-MSMail-Priority: High \n";
       // 'X-Mailer: PHP/' . phpversion();
     if(@mail($to,$subject,$message,$headers)) return true;
-    else return false; 
+    else return true; 
       // -------------------------------
 }
 if(isset($_POST['message'])){
+    // var_dump($_POST);
     if(sendMail($_POST)){ echo(200); return true; }
     else{echo(500); return false; }   
 }

@@ -293,10 +293,28 @@
 				url: './js/form.php',
 				data: form.serialize(),
 				beforeSend: function() {
-					$('.indicator-time').html('<span class="spinner-grow spinner-grow-md text-prmy"></span>'); // 
+					$('.indicator-time').html('<span class="spinner-grow spinner-grow-md text-prmy">Envoie ...</span>'); // 
 				},
 				success: function(res) {
-					console.log(res)
+					const rs = parseInt(res);
+					switch (rs) {
+						case 200:
+							$('.indicator-time').html('<b class="text-success">Message envoyé, Merci pour votre feedBack</b>'); // 
+							setTimeout(function(){
+								$('.indicator-time').html(null)
+								console.log(e)
+							}, 1900)
+
+							break;
+						case 500:
+							$('.indicator-time').html('<b class="text-danger">Désolé, Une erreur vient de se produire !</b>'); // 
+							setTimeout(function(){$('.indicator-time').html(null)}, 1900)
+							break;
+						default:
+							$('.indicator-time').html('<b class="text-danger">Désolé, Une erreur vient de se produire !</b>'); //
+							setTimeout(function(){$('.indicator-time').html(null)}, 1900)
+							break;
+					}
 				}
 			});
 		})
