@@ -1,770 +1,246 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>David Maene | Portofolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="david maene portofolio" />
-	<meta name="keywords" content="david maene, david, maene" />
-	<meta name="author" content="david maene" />
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Maene — développeur logiciel à Goma</title>
+<meta name="description" content="David Maene, développeur logiciel à Goma (RDC). API Node, sites PHP/JS rapides, Java. FR/EN.">
+<link rel="icon" href="images/about.JPG">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modern.css">
+</head>
+<body>
 
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top"><strong>David Maene</strong><span>Goma — RDC</span></a>
+    <nav class="mainnav" id="mainnav" aria-label="Navigation">
+      <a href="#profil" data-i18n="nav.about">Profil</a>
+      <a href="#travaux" data-i18n="nav.work">Travaux</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#outils" data-i18n="nav.stack">Outils</a>
+      <a href="#parcours" data-i18n="nav.path">Parcours</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button data-lang="fr" aria-pressed="true">FR</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <span class="clock" id="goma-time">Goma --:--</span>
+    <button class="burger" id="burger" data-i18n="menu">Menu</button>
+  </div>
+</header>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="images/img_bg_2.jpg">
+<main id="top">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<!-- <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker"><span class="dot" aria-hidden="true"></span><span data-i18n="kicker">N°001 — Goma, RDC — Ouvert aux missions</span></span>
+        <h1 data-i18n="hero.title">David Maene — développeur <em>logiciel</em>, à Goma.</h1>
+        <p class="lede" data-i18n="hero.lede">Je construis des <strong>API, des sites qui chargent vite et des outils métiers</strong> qui tiennent avec une connexion moyenne et des coupures. Ingénieur électro-informaticien de formation, je travaille surtout en <strong>JavaScript / Node, PHP et Java</strong>.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#travaux" data-i18n="hero.cta1">Voir les travaux</a>
+          <a class="btn btn-ghost" href="files/CV.pdf" target="_blank" rel="noopener" data-i18n="hero.cta2">Télécharger le CV</a>
+        </div>
+        <ul class="meta-list">
+          <li><span class="k" data-i18n="m.email">E-mail</span><a href="mailto:davidmened@gmail.com">davidmened@gmail.com</a></li>
+          <li><span class="k" data-i18n="m.phone">Tél.</span><a href="tel:+243970284772">+243 970 284 772</a></li>
+          <li><span class="k" data-i18n="m.base">Base</span><span data-i18n="m.base.v">Goma (RDC) — 1,68°S, 29,22°E</span></li>
+          <li><span class="k" data-i18n="m.else">Aussi</span><span><a href="https://github.com/davmaene" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/dav-maene-a5a712146/" target="_blank" rel="noopener">LinkedIn</a> · <span data-i18n="m.else.v">FR / EN / SW — je réponds en 24–48h</span></span></li>
+        </ul>
+      </div>
+      <div>
+        <figure class="photo">
+          <div class="tape" aria-hidden="true"><i></i><i></i></div>
+          <div class="photo-frame">
+            <img src="images/about.JPG" alt="David Maene — portrait" width="720" height="936">
+            <figcaption><span>David M. — Goma</span><span>03/2020 · f/2.8</span></figcaption>
+          </div>
+        </figure>
+        <span class="stamp">Goma / Nord-Kivu — RDC</span>
+      </div>
+    </div>
+    <div class="band" aria-hidden="true"><p>&nbsp;Node.js · PHP · Java · TypeScript · React · NestJS · MySQL · MongoDB · <b>API REST</b> · Linux · Git ·&nbsp;Node.js · PHP · Java · TypeScript · React · NestJS · MySQL · MongoDB · <b>API REST</b> · Linux · Git ·&nbsp;</p></div>
+  </section>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <!-- 01 PROFIL -->
+  <section class="block" id="profil" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="about.k">01 — Profil</span>
+        <div><h2 data-i18n="about.t">Pas un studio, une personne.</h2></div>
+      </div>
+      <div class="two">
+        <div class="prose rv">
+          <p data-i18n="about.p1">Je m'appelle David Maene. Je vis à Goma et je fais du logiciel depuis mes études d'ingénierie : d'abord l'électrique, puis l'informatique, puis le web parce qu'il fallait bien mettre les deux ensemble.</p>
+          <p data-i18n="about.p2">Concrètement : je fais des back-ends Node qui n'ont pas besoin de 32 Go de RAM, des sites PHP/JS sobres, des petites applis Java quand il faut, et je dépanne ce qui existe déjà. Je documente, je teste l'essentiel, et je laisse un code qu'un autre dev peut reprendre.</p>
+          <p data-i18n="about.p3">Je travaille avec des écoles, des petites boîtes et des ONG autour des Grands Lacs. Devis écrit, délais dits franchement, pas de jargon si vous n'en voulez pas.</p>
+        </div>
+        <aside class="fiche rv">
+          <h3 data-i18n="fiche.t">Fiche rapide</h3>
+          <dl>
+            <dt data-i18n="f.loc">Lieu</dt><dd data-i18n="f.loc.v">Goma, Nord-Kivu — RDC</dd>
+            <dt data-i18n="f.exp">Depuis</dt><dd data-i18n="f.exp.v">2018 — dev, 2021 diplômé génie info</dd>
+            <dt data-i18n="f.lang">Langues</dt><dd data-i18n="f.lang.v">Français, anglais, swahili</dd>
+            <dt data-i18n="f.now">En ce moment</dt><dd data-i18n="f.now.v">API Node pour un site universitaire (ULPGL), maintenance PHP/JS</dd>
+            <dt data-i18n="f.contact">Contact direct</dt><dd data-i18n="f.contact.v">davidmened@gmail.com — +243 970 284 772</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);  ">
-					<!-- <img src="images/about.jpg-" alt="" srcset="" style="width: 150px;" class="border p-2 bg-danger"> -->
-				</div>
-				<h1 id="colorlib-logo"><a href="">David Maene</a></h1>
-				<span class="position"><a href="#">Software Developer</a> in DRC / <b>Goma</b></span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul class="">
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<!-- <li><a href="#" data-nav-section="experience">Experience</a></li> -->
-						<!-- <li><a href="#" data-nav-section="work">Work</a></li> -->
-						<!-- <li><a href="#" data-nav-section="blog">Blog</a></li> -->
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+  <!-- 02 TRAVAUX -->
+  <section class="block" id="travaux" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="work.k">02 — Travaux choisis</span>
+        <div>
+          <h2 data-i18n="work.t">Six chantiers, pas des mockups.</h2>
+          <p data-i18n="work.s">Du code réel, sur mon GitHub. Certains projets sont des briques (lib, ORM), d'autres des applis complètes. Demandez-moi une visite guidée, je montre volontiers l'intérieur.</p>
+        </div>
+      </div>
+      <div class="work rv">
+        <a class="work-row" href="https://github.com/davmaene/landingpage-backend" target="_blank" rel="noopener">
+          <span class="work-year">2025–26</span>
+          <span><h3>landingpage-backend <span class="arrow">↗</span></h3>
+          <p data-i18n="w1.d">API REST du site de l'ULPGL à Goma. Contenus, news, endpoints sobres pensés pour un hébergement modeste.</p>
+          <span class="tags"><li>Node.js</li><li>REST</li><li>ULPGL / Goma</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+        <a class="work-row" href="https://github.com/davmaene/dm-handleSearch" target="_blank" rel="noopener">
+          <span class="work-year">2023</span>
+          <span><h3>dm-handleSearch <span class="arrow">↗</span></h3>
+          <p data-i18n="w2.d">Petite librairie TypeScript pour fouiller un tableau d'objets côté client. Zéro dépendance, testée sur données sales.</p>
+          <span class="tags"><li>TypeScript</li><li>lib</li><li>0 dép.</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+        <a class="work-row" href="https://github.com/davmaene/Mini-ORM-PHP" target="_blank" rel="noopener">
+          <span class="work-year">2021</span>
+          <span><h3>Mini-ORM-PHP <span class="arrow">↗</span></h3>
+          <p data-i18n="w3.d">Mini ORM en PHP : Singleton, Strategy, Observer. Fait pour comprendre, puis réutilisé sur des petits projets.</p>
+          <span class="tags"><li>PHP</li><li>patterns</li><li>MySQL</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+        <a class="work-row" href="https://github.com/davmaene/B-Commerce" target="_blank" rel="noopener">
+          <span class="work-year">2022</span>
+          <span><h3>B-Commerce <span class="arrow">↗</span></h3>
+          <p data-i18n="w4.d">Base d'une plateforme B2B en Java. Catalogue, commandes, rôles — posée proprement, à reprendre.</p>
+          <span class="tags"><li>Java</li><li>B2B</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+        <a class="work-row" href="https://github.com/davmaene/books-Lib" target="_blank" rel="noopener">
+          <span class="work-year">2021</span>
+          <span><h3>books-Lib <span class="arrow">↗</span></h3>
+          <p data-i18n="w5.d">Gestion de bibliothèque en Java. Prêts, retours, recherche — un classique bien rangé.</p>
+          <span class="tags"><li>Java</li><li>CLI / desktop</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+        <a class="work-row" href="https://github.com/davmaene/build-landing-page-mk" target="_blank" rel="noopener">
+          <span class="work-year">2024</span>
+          <span><h3>Soko Mukulima <span class="arrow">↗</span></h3>
+          <p data-i18n="w6.d">Landing + déploiement pour Soko Mukulima (agri). Pages légères, images compressées, pensée 3G.</p>
+          <span class="tags"><li>JavaScript</li><li>landing</li><li>agri / Goma</li></span></span>
+          <span class="work-link" data-i18n="work.view">Code ↗</span>
+        </a>
+      </div>
+      <p class="more rv"><a href="https://github.com/davmaene" target="_blank" rel="noopener" data-i18n="work.more">Tout voir sur GitHub — github.com/davmaene</a></p>
+    </div>
+  </section>
 
-			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a href="https://twitter.com/dav_maene" target="_blank">david maene</a>
-</small></p>
-				<ul style="background: black;padding: 4px 4px;padding-top: 10px" class="hire rounded border">
-					<li><a href="https://github.com/davmaene"><i class="icon-github h3 pb-0 mb-0"></i></a></li>
-					<li><a href="https://twitter.com/dav_maene"><i class="icon-twitter2 h3 pb-0 mb-0"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/dav-maene-a5a712146/"><i class="icon-linkedin2 h3 pb-0 mb-0"></i></a></li>
-					<li><a href="https://www.instagram.com/dav_maene/"><i class="icon-instagram h3 pb-0 mb-0"></i></a></li>
-					<li><a href="https://facebook.com/david.maene.73/"><i class="icon-facebook2 h3 pb-0 mb-0"></i></a></li>
-				</ul>
-			</div>
-		</aside>
+  <!-- 03 SERVICES -->
+  <section class="block" id="services" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="serv.k">03 — Services</span>
+        <div><h2 data-i18n="serv.t">Ce que je fais vraiment.</h2></div>
+      </div>
+      <div class="serv-grid rv">
+        <div class="serv"><span class="n">A.</span><h3 data-i18n="s1.t">API & back-ends</h3><p data-i18n="s1.d">Endpoints Node/PHP clairs, auth simple, exports CSV, webhooks. Avec un README qui dit comment lancer.</p></div>
+        <div class="serv"><span class="n">B.</span><h3 data-i18n="s2.t">Sites rapides</h3><p data-i18n="s2.d">Vitrines et sites d'écoles/ONG : HTML soigné, peu de JS, qui s'ouvrent à Goma comme à Bruxelles.</p></div>
+        <div class="serv"><span class="n">C.</span><h3 data-i18n="s3.t">Applis & outils</h3><p data-i18n="s3.d">Petites applis Java/JS, scripts d'import, tableaux de bord sobres. Pas d'usine à gaz.</p></div>
+        <div class="serv"><span class="n">D.</span><h3 data-i18n="s4.t">Reprise & formation</h3><p data-i18n="s4.d">Je relis votre code existant, je corrige, je forme votre équipe à le tenir sans moi.</p></div>
+      </div>
+      <p class="note rv"><strong>Note — </strong><span data-i18n="serv.note">Je ne fais pas : logos à 5 $, promesses "IA révolutionnaire", ni apps qui exigent la 5G et un iPhone 16. Si votre besoin dépasse mes mains, je vous le dis et je redirige.</span></p>
+    </div>
+  </section>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi!<br>I'm David</h1>
-						   					<h2>
-												I am an electrical engineer / computer scientist available to hire</h2>
-												<p><a href="files/CV.pdf" class="btn btn-primary btn-learn" target="_blank">Download my CV &nbsp;<i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a Software developer</h1>
-												<h2>looking for new opportunities</h2>
-												<p><a href="https://github.com/davmaene" class="btn btn-primary btn-learn" target="_blank">View my profile on Github &nbsp;<i class="icon-briefcase3"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+  <!-- 04 OUTILS -->
+  <section class="block" id="outils" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="stack.k">04 — Outils</span>
+        <div><h2 data-i18n="stack.t">Une table de travail, pas un nuage de tags.</h2></div>
+      </div>
+      <div class="stack3 rv">
+        <div><h3 data-i18n="st1">Tous les jours</h3>
+          <ul><li>JavaScript / Node.js <small>Express, Nest</small></li><li>PHP <small>vanilla, petits MVC</small></li><li>Git & Linux <small>deploy SSH</small></li><li>HTML / CSS <small>sobre</small></li></ul>
+        </div>
+        <div><h3 data-i18n="st2">Souvent</h3>
+          <ul><li>TypeScript <small>libs, front</small></li><li>React / RN <small>écrans simples</small></li><li>MySQL / Mongo <small>schémas propres</small></li><li>Photoshop <small>retouche, assets</small></li></ul>
+        </div>
+        <div><h3 data-i18n="st3">Déjà croisé</h3>
+          <ul><li>Java <small>applis, B2B</small></li><li>Python <small>scripts, data-mining</small></li><li>Docker <small>le minimum</small></li><li>cPanel / VPS <small>hébergement</small></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Us</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi, I'm David Maene</strong> 	
-											An engineer in electrical and computer engineering, in DRCongo, specializing in web design, data-mining ...
-											As basic language <b>NodeJs</b>, <b>Javascript</b>, <b>PHP</b> and <b>Java</b></p>
-										<p></p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Graphic Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>Web Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Software</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Application</h3>
-									</div>
-								</div>
-							</div>
-							<div class="row hide">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
-										<a href="mailto:davidmened@gmail.com" class="btn-hire">Hire me</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+  <!-- 05 PARCOURS -->
+  <section class="block" id="parcours" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="path.k">05 — Parcours</span>
+        <div><h2 data-i18n="path.t">Court et vérifiable.</h2></div>
+      </div>
+      <ol class="timeline rv">
+        <li><time>2021</time><div><h3 data-i18n="e1.t">Licence ( Bac+5 ) — génie informatique</h3><p data-i18n="e1.d">Diplômé en 2021. Web, bases de données, data-mining, projets Node/PHP.</p></div></li>
+        <li><time>2018–19</time><div><h3 data-i18n="e2.t">Double cursus — électrotechnique + informatique</h3><p data-i18n="e2.d">2018–2019. Les deux en même temps : réseaux élec le matin, code l'après-midi.</p></div></li>
+        <li><time>2018 →</time><div><h3 data-i18n="e3.t">Depuis — missions et maintenance</h3><p data-i18n="e3.d">Sites d'universités, commerces, petites applis. Beaucoup de maintenance : c'est là qu'on apprend.</p></div></li>
+      </ol>
+    </div>
+  </section>
 
+  <!-- 06 CONTACT -->
+  <section class="block" id="contact" data-sec>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-num" data-i18n="contact.k">06 — Contact</span>
+        <div><h2 data-i18n="contact.t">Écrivez comme vous parlez.</h2><p data-i18n="contact.s">Un paragraphe suffit : qui vous êtes, ce qu'il faut construire, et pour quand. Je réponds avec un créneau d'appel et des questions précises.</p></div>
+      </div>
+      <div class="contact-grid">
+        <ul class="c-lines rv">
+          <li><span class="k" data-i18n="m.email">E-mail</span><a href="mailto:davidmened@gmail.com">davidmened@gmail.com</a></li>
+          <li><span class="k" data-i18n="m.phone">Tél.</span><a href="tel:+243970284772">+243 970 284 772</a></li>
+          <li><span class="k" data-i18n="c.addr">Adresse</span><span data-i18n="c.addr.v">13, Uvira — Q. Murara, Goma — RDC</span></li>
+          <li><span class="k">GitHub</span><a href="https://github.com/davmaene" target="_blank" rel="noopener">github.com/davmaene</a></li>
+        </ul>
+        <form class="contact rv" id="cform">
+          <div class="f"><label for="cf-name" data-i18n="fl.name">Votre nom</label><input id="cf-name" required autocomplete="name"></div>
+          <div class="f"><label for="cf-from" data-i18n="fl.email">Votre e-mail</label><input id="cf-from" type="email" required autocomplete="email"></div>
+          <div class="f"><label for="cf-subj" data-i18n="fl.subj">Objet en une ligne</label><input id="cf-subj" required></div>
+          <div class="f"><label for="cf-msg" data-i18n="fl.msg">Le besoin, en clair</label><textarea id="cf-msg" rows="5" required></textarea></div>
+          <button class="btn btn-solid" type="submit" data-i18n="fl.send">Préparer l'e-mail</button>
+          <p class="hint" data-i18n="fl.hint">Ouvre votre messagerie avec le message déjà rempli — rien n'est envoyé sans vous.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-			
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Innovative Ideas</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>Graphic Design</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box hide">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box hide">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<!-- <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<div id="colorlib-counter" class="colorlib-counters hide" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Cups of coffee</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Projects</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Clients</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Partners</span>
-						</div>
-					</div>
-				</div>
-			</div>
+</main>
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p> After my engineering studies, and various trainings, I affirm to have skills in</p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Photoshop</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>75%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Javascript</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>60%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>85%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>CSS3</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>90%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>NodeJs</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>70%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>PHP</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>80%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Java</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <!-- <span>60%</span> -->
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year">2026</span> David Maene — <span data-i18n="foot">Fait à la main à Goma — HTML/CSS/JS, sans template. Photo : mars 2020, Canon EOS 60D.</span></span>
+    <span><a href="https://github.com/davmaene" target="_blank" rel="noopener">GitHub</a> · <a href="https://twitter.com/dav_maene" target="_blank" rel="noopener">Twitter</a> · <a href="https://www.linkedin.com/in/davmaene" target="_blank" rel="noopener">LinkedIn</a></span>
+    <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-i18n="top">Haut ↑</button>
+  </div>
+</footer>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelor +3 of computer engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-lg-12">
-										      			<p>In 2021 I get my diploma in <b>computer</b> engineering</p>
-										      		</div>
-										      		<div class="col-md-6 hide">
-										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-										      		</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of electrical and computer engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-												<p>In 2018 -2019 I get my diploma in <b>electrical</b> and <b>computer</b> engineering; In the same year we combine two courses</p>
-													<ul>
-														<li>Computer Engineering</li>
-														<li>Electrical engineering</li>
-													</ul>
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default hide">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Diploma in Information Technology
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default hide">
-									    <div class="panel-heading" role="tab" id="headingFour">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									        <div class="panel-body">
-									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default hide">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
-									        </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-experience hide" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
-					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-
-			<section class="colorlib-work hide" data-section="work">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
-							<h2 class="colorlib-heading animate-box">Recent Work</h2>
-						</div>
-					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
-										<span>Website</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
-										<span>Illustration</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/img-4.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 04</a></h3>
-										<span>Application</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 05</a></h3>
-										<span>Graphic, Logo</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-6.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:davidmened@gmail.com">davidmened@gmail.com</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>13 Uvira. Q. Murara. <b>Goma</b> City | Country <b>DRCongo</b></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://0970284772">+243 970 284 772</a></p>
-									<!-- <p><a href="tel://0970284772">+243 970 284 772</a></p> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form id="formcontact">
-										<div class="form-group">
-											<input type="text" class="form-control" name="_from" placeholder="Name" required>
-										</div>
-										<div class="form-group">
-											<input type="email" class="form-control" name="from" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" name="subject" placeholder="Subject" required>
-										</div>
-										<div class="form-group">
-											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message w-100" value="Send Message">
-											<div class="col-lg-12 d-flex justify-content-center py-5 indicator-time text-center">
-											</div>
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	</body>
+<script src="js/app.js"></script>
+</body>
 </html>
-
